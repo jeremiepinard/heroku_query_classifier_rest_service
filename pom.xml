@@ -12,18 +12,18 @@
             <url>http://download.java.net/maven/2/</url>
             <layout>default</layout>
         </repository>
+        <!-- this repo is needed to fetch the query classifier jar from the rp repo -->
+        <repository>
+            <id>radialpoint-artifactory-maven</id>
+            <name>Radialpoint Maven Proxy</name>
+            <url>http://buildrepo.rp.corp/artifactory/repo</url>
+        </repository>
         <!-- this local repo is needed for the build to be able to succeed on a heroku dyno -->
         <repository>
             <id>project.local</id>
             <name>project</name>
             <url>file:${project.basedir}/repo</url>
         </repository>
-        <!-- this repo is needed to fetch the query classifier jar from the rp repo -->
-        <!--<repository>-->
-            <!--<id>radialpoint-artifactory-maven</id>-->
-            <!--<name>Radialpoint Maven Proxy</name>-->
-            <!--<url>http://buildrepo.rp.corp/artifactory/repo</url>-->
-        <!--</repository>-->
     </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
