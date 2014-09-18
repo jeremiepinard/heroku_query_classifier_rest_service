@@ -19,11 +19,11 @@
             <url>file:${project.basedir}/repo</url>
         </repository>
         <!-- this repo is needed to fetch the query classifier jar from the rp repo -->
-        <repository>
-            <id>radialpoint-artifactory-maven</id>
-            <name>Radialpoint Maven Proxy</name>
-            <url>http://buildrepo.rp.corp/artifactory/repo</url>
-        </repository>
+        <!--<repository>-->
+            <!--<id>radialpoint-artifactory-maven</id>-->
+            <!--<name>Radialpoint Maven Proxy</name>-->
+            <!--<url>http://buildrepo.rp.corp/artifactory/repo</url>-->
+        <!--</repository>-->
     </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
